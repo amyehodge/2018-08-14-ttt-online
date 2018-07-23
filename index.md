@@ -102,33 +102,12 @@ locations:
   can use http://itouchmap.com/latlong.html to find the lat/long of an
   address.
   -->
-<h4 id="where">Where</h3>
 
-{% assign inperson = "false" %}
-{% for loc in page.locations %}
 
-{% capture online %}{{ loc.venue | downcase }}{% endcapture %}
 
-<h4>{{ loc.venue }}</h4>
+<strong>Where:</strong>This is an online event. We will meet using the online videoconference software Zoom. You will need to <a href="https://zoom.us/download">download and install their client</a> to connect with your instructors. The link to use for this event is <{{ loc.address }}>.</p>
 
-<p>This is an online event. We will meet using the online videoconference software Zoom. You will need to <a href="https://zoom.us/download">download and install their client</a> to connect with your instructors. The link to use for this event is <{{ loc.address }}>.</p>
 
-{% else %}
-{% assign inperson = "true" %}
-{{ loc.address }} {% if loc.latlng %} Get directions with
-    <a href="//www.openstreetmap.org/?mlat={{loc.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
-    or
-    <a href="//maps.google.com/maps?q={{loc.latlng}}">Google Maps</a>. {% endif %}
-
-{% endif %}
-{% endfor %}
-
-{% if inperson == "true" %}
-  <strong>Where:</strong>
-  {{page.address}}.
-
-</p>
-{% endif %}
 
 <p>
   <strong>Requirements:</strong> Participants should bring a laptop
