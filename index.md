@@ -3,6 +3,7 @@ layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
 carpentry: "FIXME"    # what kind of Carpentry (must be either "dc" or "swc")
 venue: "Online Instructor Training"        # brief name of host site without address (e.g., "Euphoric State University")
+where: "https://carpentries.zoom.us/my/carpentriesroom1" 
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 humandate: "Aug 14-15, 2018"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
@@ -96,10 +97,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <p id="where">
   <strong>Where:</strong>
   {{page.address}}.
-  Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
+
 </p>
 {% endif %}
 
@@ -140,8 +138,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   Materials will be provided in advance of the workshop and
   large-print handouts are available if needed by notifying the
   organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  please get in touch (using contact details below) and we will
+  you please get in touch (using contact details below) and we will
   attempt to provide them.
 </p>
 
