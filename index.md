@@ -93,7 +93,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   can use http://itouchmap.com/latlong.html to find the lat/long of an
   address.
 -->
-{% if page.latlng %}
+
 <p id="where">
   <strong>Where:</strong>
   {{page.address}}.
