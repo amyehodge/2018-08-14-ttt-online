@@ -2,8 +2,6 @@
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
 carpentry: "FIXME"    # what kind of Carpentry (must be either "dc" or "swc")
-venue: "Online Instructor Training"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "https://carpentries.zoom.us/my/carpentriesroom1"
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 humandate: "Aug 14-15, 2018"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
@@ -15,7 +13,7 @@ contact: ["amyhodge@stanford.edu"]    # boxed, comma-separated list of contact e
 etherpad: http://pad.software-carpentry.org/2018-08-14-ttt-online            # optional: URL for the workshop Etherpad if there is one
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 locations:
-  - venue: "Online"
+  - venue: "Online Instructor Training"
     address: "https://carpentries.zoom.us/my/carpentriesroom1"
 ---
 
